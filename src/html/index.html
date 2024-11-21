@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>ログイン画面f</title>
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <div class="header">
+        <header class="left">
+            <p>支店管理システム</p>
+        </header>
+        <div class="header_right">
+            <ul>
+                <li>状態：<span id="login_status">ログアウト中</span></li>
+                <li>社員名：<span id="user_name">ゲスト</span></li>
+                <li><span id="user_role">機能制限中</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- メイン部分 -->
+    <div class="main">
+        <div class="container">
+            <div class="sidebar">
+                <ul class="sidebar_menu">
+                    <li><a href="#">在庫商品一覧</a></li>
+                    <li><a href="#">ファイル読み取り</a></li>
+                    <li><a href="#">商品読み取り</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1 class="page_title">ログイン</h1>
+                <form action="#" method="post">
+                    <div class="form_content">
+                        <label class="form_parts">
+                            <p>メールアドレス</p>
+                            <input type="email" name="email" required>
+                        </label>
+                        <label class="form_parts">
+                            <p>パスワード</p>
+                            <input type="password" name="password" required>
+                        </label>    
+                    </div>
+                    <div class="form_action">
+                        <a href="#">パスワードをお忘れの方はこちら</a>
+                        <input type="submit" value="ログイン" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- フッター部分 -->
+    <div class="footer">
+        <div class="container">
+            
+        </div>
+    </div>
+</body>
+</html>
