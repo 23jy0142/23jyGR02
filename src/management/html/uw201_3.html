@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../css/component/sidebar.css" />
     <link rel="stylesheet" href="../css/component/content.css" />
     <link rel="stylesheet" href="../css/component/" />
+    <link rel="stylesheet" href="../css/component/button.css">
+    <link rel="stylesheet" href="../css/component/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <title>ログイン画面</title>
   </head>
   <body>
@@ -46,47 +49,66 @@
           </div>
           <div class="item_list">
             <h2></h2>
+            <form action="#" method="post">
+              <label class="form_parts">
+                表示月
+                <select name="month">
+                  <option value="202503" selected>表示付きを選択してください</option>
+                  <option value="202503">2025年3月</option>
+                  <option value="202503">2025年2月</option>
+                  <option value="202503">2025年1月</option>
+                  <option value="202503">2024年12月</option>
+                </select>
+              </label>
+              <input type="submit" value="更新" class="btn">
+
+            </form>
+            table>
             <table border="1">
+              <thead>
                 <tr>
-                    <th>商品ID</th>
-                    <th>商品名</th>
-                    <th>販売価格</th>
-                    <th>在庫数</th>
-                    <th>入荷数</th>
-                    <th>売上</th>
-                    <th>販売価格</th>
-                    <th>商品詳細</th>
-                </tr>
+                  <th>商品ID</th>
+                  <th>商品名</th>
+                  <th>販売価格</th>
+                  <th>在庫数</th>
+                  <th>入荷数</th>
+                  <th>売上</th>
+                  <th>販売数</th>
+                  <th>商品詳細</th>
+              </tr>
+              </thead>
+              <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>I001</td>
+                    <td>きのこのやま</td>
+                    <td>128円</td>
+                    <td>1,000</td>
+                    <td>500</td>
+                    <td>235,000</td>
+                    <td>100</td>
                     <td><button>詳細</button></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>I002</td>
+                    <td>タケノコのさと</td>
+                    <td>130円</td>
+                    <td>1,200</td>
+                    <td>500</td>
+                    <td>500</td>
+                    <td>100</td>
                     <td><button>詳細</button></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>I003</td>
+                    <td>切り株の屍</td>
+                    <td>1000円</td>
+                    <td>200</td>
+                    <td>500</td>
+                    <td>25,000</td>
+                    <td>100</td>
                     <td><button>詳細</button></td>
                 </tr>
+              </tbody>
             </table>
           </div>
         </div>
